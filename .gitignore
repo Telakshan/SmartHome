@@ -16,6 +16,7 @@
 /Backend/.sts4-cache
 
 ### IntelliJ IDEA ###
+/Backend/src/main/resources
 /Backend/.idea
 /Backend/*.iws
 /Backend/*.iml
