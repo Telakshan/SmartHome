@@ -21,6 +21,7 @@
 /Backend/*.iws
 /Backend/*.iml
 /Backend/*.ipr
+/Backend/src/main/resources
 
 ### NetBeans ###
 /Backend/nbproject/private/
