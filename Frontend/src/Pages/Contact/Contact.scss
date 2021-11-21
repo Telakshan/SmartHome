@@ -1,0 +1,33 @@
+.contact-container{
+    margin: 20vh auto auto;
+    max-width: 1200px;
+    font-size: 18px;
+
+    .micro{
+        width: 230px;
+        height: 230px;
+        
+        margin: 0 auto auto;
+    }
+
+    h1{
+        line-height: 50px;
+    }
+    span{
+        color: rgb(0, 174, 255);
+    }
+
+    a{
+        color: blue;
+    }
+}
+
+@media(max-width: 852px){
+    .contact-container{
+
+        .spring-boot{
+            width: auto;
+            height: 230px; 
+        }
+    }
+}

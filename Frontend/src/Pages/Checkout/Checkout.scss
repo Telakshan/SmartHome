@@ -1,0 +1,52 @@
+.checkout-container{
+
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7vh auto 0;
+
+    .checkout-header{
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid darkgray;
+
+        .header-block{
+
+            &:first-child{
+                width: 60%;
+            }
+            text-transform: capitalize;
+            width: 30%;
+
+            &:last-child{
+                width: 8%;
+            }
+        }
+
+    }
+    
+    .total{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        h3{
+            margin: 0;
+        }
+    }
+
+    .clear-cart{
+        margin-bottom: 5px;
+        font-size: 24px;
+        &:hover{
+            color: red;
+            cursor: pointer;
+        }
+    }
+
+    button{
+        margin-bottom: 15px;
+    }
+}

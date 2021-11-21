@@ -1,0 +1,25 @@
+.log-in {
+  width: 380px;
+
+  form {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 852px) {
+  .log-in {
+    margin: 0 auto auto;
+  }
+}
+
+@media (max-width: 386px) {
+  .log-in {
+    width: 85%;
+  }
+}
+
+@media (max-width: 371px) {
+    .log-in {
+      width: 75%;
+    }
+  }

@@ -1,0 +1,24 @@
+.register {
+  width: 380px;
+}
+
+@media (max-width: 852px) {
+  .register {
+    margin: 0 auto auto;
+  }
+}
+
+@media (max-width: 386px) {
+  .register {
+    margin: 0vh auto auto;
+    form {
+      margin: 0vh auto auto;
+      width: 85%;
+    }
+  }
+}
+@media (max-width: 371px) {
+    .register {
+      width: 75%;
+    }
+  }

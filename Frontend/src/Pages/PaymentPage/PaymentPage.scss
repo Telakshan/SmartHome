@@ -1,0 +1,29 @@
+.payment-page-container {
+  width: 1000px;
+  display: flex;
+  margin: 10vh auto auto;
+
+  .cart-items {
+      text-align: center;
+    flex: 0.5;
+    margin-top: 5vh;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 852px) {
+  .payment-page-container {
+    width: 380px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .cart-items {
+      height: 380px;
+    }
+  }
+}

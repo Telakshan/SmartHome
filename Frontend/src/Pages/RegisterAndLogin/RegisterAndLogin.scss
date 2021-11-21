@@ -1,0 +1,15 @@
+.register-login {
+  margin: 20vh auto auto;
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 852px) {
+  .register-login {
+    width: 380px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}

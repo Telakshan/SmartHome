@@ -1,0 +1,167 @@
+.navigation-container {
+  z-index: 100;
+  height: 70px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  position: fixed;
+  z-index: 5;
+  top: 0vh;
+  width: 100%;
+  background-color: #fff;
+
+  .close {
+    position: fixed;
+    color: #ff585d;
+    z-index: 3;
+    font-size: 32px;
+    margin-top: 20vh;
+    margin-left: 190px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    flex: 0.3;
+    font-size: 2rem;
+    justify-content: center;
+
+    h4 {
+      color: #ff585d;
+    }
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .search-container {
+    flex: 0.4;
+  }
+
+  .option-box {
+    flex: 0.2;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff585d;
+      }
+    }
+  }
+  .cart-icon-container {
+    flex: 0.1;
+    justify-content: flex-end;
+    .number-of-items {
+      padding: 2px;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      justify-content: center;
+      text-align: center;
+      background-color: #ff585d;
+      position: absolute;
+      top: 15px;
+      right: 7px;
+      z-index: 2;
+    }
+
+    .cart-icon {
+      font-size: 32px;
+      cursor: pointer;
+      right: 10px;
+      top: 15px;
+      position: absolute;
+
+      &:hover {
+        color: #ff585d;
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .navigation-container {
+    .logo {
+      display: none;
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    .cart-icon-container {
+      flex: 0.3;
+    }
+
+    .option-box {
+      display: none;
+    }
+
+    .menu-bar {
+      display: block;
+      flex: 0.3;
+      font-size: 2rem;
+      justify-content: center;
+
+      .icon {
+        &:hover {
+          cursor: pointer;
+          color: #ff585d;
+        }
+      }
+    }
+  }
+}
+
+.scrolled {
+  z-index: 2;
+  background-color: #222629;
+  opacity: 0.9;
+  transition: 0.3s;
+  width: 100%;
+
+  .logo {
+    h4 {
+      color: #fff;
+    }
+  }
+
+  .search-box {
+    color: #fff;
+    border: 1px solid #fff;
+
+    input {
+      color: #fff;
+    }
+
+    .search-icon {
+      color: #fff;
+    }
+  }
+
+  .option-box {
+    .option {
+      color: #fff;
+    }
+  }
+  .cart-icon-container {
+    .number-of-items {
+      color: #fff;
+    }
+
+    .cart-icon {
+      color: #fff;
+    }
+  }
+}
