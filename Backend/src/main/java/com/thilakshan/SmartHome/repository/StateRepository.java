@@ -1,11 +1,17 @@
 package com.thilakshan.SmartHome.repository;
 
-import com.thilakshan.SmartHome.model.ProductCategory;
+import com.thilakshan.SmartHome.model.State;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@RepositoryRestResource(collectionResourceRel = "productCategory", path = "product-category")
+import java.util.List;
+
 @CrossOrigin("http://localhost:3000/")
-public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long> {
+@RepositoryRestResource
+public interface StateRepository extends JpaRepository<State, Integer> {
+
+    List<State> findByCountryCode(@Param("code") String code);
+
 }

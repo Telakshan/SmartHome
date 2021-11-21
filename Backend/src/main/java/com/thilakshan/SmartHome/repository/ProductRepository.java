@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:3000/")
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     List<Product> findAll();
