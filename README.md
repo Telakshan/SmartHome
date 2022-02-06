@@ -1,7 +1,5 @@
 # SmartHome
 
-![alt text](http://colwil.com/wp-content/uploads/2019/09/image-29.png)
-
 ![alt text](https://i.imgur.com/bggwJPR.png)
 
 ## Full stack e-commerce web application built using Spring Boot and React.
